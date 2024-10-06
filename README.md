@@ -1,4 +1,4 @@
-# WEB103 Project 2 - *Virtual Community Space*
+# WEB103 Project 3 - *Virtual Community Space*
 
 Submitted by: **Mahidhar Vukkem**
 
