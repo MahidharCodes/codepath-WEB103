@@ -1,4 +1,4 @@
-# WEB103 Project 3 - *Bolt Bucket*
+# WEB103 Project 4 - *Bolt Bucket*
 
 Submitted by: **Mahidhar Vukkem**
 
