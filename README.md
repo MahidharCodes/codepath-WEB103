@@ -1,32 +1,33 @@
-# WEB103 Project 3 - *Virtual Community Space*
+# WEB103 Project 3 - *Bolt Bucket*
 
 Submitted by: **Mahidhar Vukkem**
 
 About this web app: 
 
-This web app is a virtual community space designed to help users explore and discover events based on their location. Whether you're looking for music concerts, community meetups, or niche activities, this platform provides an intuitive and interactive way to explore what’s happening in various locations.
-Users can select from multiple predefined locations and view events that have occurred or are upcoming. The platform serves as a hub for exploring anything from local music events to adventurous expeditions. By offering a clean and user-friendly interface, this project aims to connect users with interesting activities in their community, whether real or imagined.
+This application allows users to customize cars by selecting various options for exteriors, roofs, wheels, and interiors. The app dynamically updates the car's visual display and calculates the total price based on selected features. It is integrated with a PostgreSQL database, enabling users to view, create, edit, and delete custom cars. Error handling is implemented to prevent invalid feature combinations, ensuring a seamless and interactive user experience.
 
-Time spent: **8** hours
+Time spent: **20** hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured `cars` table**
+  - [x] **NOTE: Your GIF must include a view of your Railway database that shows the contents of the table used by your app**
 - [x] **The web app uses React to display data from the API**
-- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [x] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
-- [x] **The web app displays the title of the app**
-- [x] **A visual interface allows the user to select a Location they would like to view**
-- [x] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
-- [x] **Each Location detail page should have its own unique URL**
+- [x] **Users can view a list of options they can select for different aspects of a `Car`**
+- [x] **On selecting each option, the displayed visual icon for the `Car` updates to match the option the user chose**
+- [x] **The user can submit their choices to save the car to the list of created `Cars`**
+- [x] **If a user submits a feature combo that is impossible, they should receive an appropriate error message and the item should not be saved to the database**
+- [x] **The app displays the total price of all features**
+- [x] **Users can view a list of all submitted `Cars`**
+- [x] **Users can edit or delete a submitted `Car` from the list view of submitted `sCar`**
+- [x] **Users can update or delete `Car` that have been created from the detail page**
 
 The following **optional** features are implemented:
 
-- [x] An additional page shows all possible `Events` that the user can sort and filter by `Location`
-- [x] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
+- [x] **Selecting particular options prevents incompatible options from being selected even before form submission**
 
 ## Video Walkthrough
 

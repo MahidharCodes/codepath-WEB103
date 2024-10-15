@@ -1,53 +1,39 @@
 import React from 'react'
-import { useRoutes, Link } from 'react-router-dom'
-import Locations from './pages/Locations'
-import LocationEvents from './pages/LocationEvents'
-import Events from './pages/Events'
+import { useRoutes } from 'react-router-dom'
+import Navigation from './components/Navigation'
+import ViewCars from './pages/ViewCars'
+import EditCar from './pages/EditCar'
+import CreateCar from './pages/CreateCar'
+import CarDetails from './pages/CarDetails'
 import './App.css'
 
 const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <Locations />
+      element: <CreateCar title='BOLT BUCKET | Customize' />
     },
     {
-      path: '/echolounge',
-      element: <LocationEvents index={1} />
+      path:'/customcars',
+      element: <ViewCars title='BOLT BUCKET | Custom Cars' />
     },
     {
-      path: '/houseofblues',
-      element: <LocationEvents index={2} />
+      path: '/customcars/:id',
+      element: <CarDetails title='BOLT BUCKET | View'/>
     },
     {
-      path: '/pavilion',
-      element: <LocationEvents index={3} />
-    },
-    {
-      path: '/americanairlines',
-      element: <LocationEvents index={4} />
-    },
-    {
-      path: '/events',
-      element: <Events />
+      path: '/edit/:id',
+      element: <EditCar title='BOLT BUCKET | Edit' />
     }
   ])
 
   return (
     <div className='app'>
 
-      <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
+      <Navigation />
 
-        <div className='header-buttons'>
-          <Link to='/' role='button'>Home</Link>
-          <Link to='/events' role='button'>Events</Link>
-        </div>
-      </header>
+      { element }
 
-      <main>
-        {element}
-      </main>
     </div>
   )
 }
